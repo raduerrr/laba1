@@ -16,7 +16,7 @@
     <li><a href="https://kubsu.ru/">КубГУ(https)</a></li>
 
     <!-- 3. ссылка-изображение -->
-    <li><a href="https://kubsu.ru"><img src="image.jpg" style="width: 200px"></a></li>
+    <li><a href="https://kubsu.ru/"><img src="image.jpg" style="width: 200px"></a></li>
 
     <!-- 4. сокращенная ссылка на внутреннюю страницу -->
     <li><a href="/about">Внутренняя страница</a></li>
@@ -31,7 +31,7 @@
     <li><a href="https://kubsu.ru/?a=67&b=1337&c=52">Ссылка с тремя параметрами</a></li>
 
     <!-- 8. ссылка с параметром id в URL -->
-    <li><a href="https://kubsu.ru/?id=123">Ссылка с параметром id</a></li>
+    <li><a href="https://kubsu.ru/?id=123">Cсылка с параметром id</a></li>
 
     <!-- 9. относительная на страницу в текущем каталоге -->
     <li><a href="page.html">Страница в текущем каталоге</a></li>
@@ -102,31 +102,31 @@
     <label>
       ФИО:
       <br>
-      <input type="text" name="FIO" placeholder="Введите ФИО">
+      <input type="text" name="FIO" placeholder="Введите ФИО" required>
     </label>
     <br>
     <label>
       Номер телефона:
       <br>
-      <input type="tel" name="ntel" placeholder="Введите номер телефона">
+      <input type="tel" name="ntel" placeholder="Введите номер телефона" required>
     </label>
     <br>
     <label>
       Адрес эл. почты:
       <br>
-      <input type="email" name="email" placeholder="Введите адрес эл. почты">
+      <input type="email" name="email" placeholder="Введите адрес эл. почты" required>
     </label>
     <br>
     <label>
       Дата рождения:
       <br>
-      <input type="date" name="brthday">
+      <input type="date" name="brthday" required>
     </label>
     <br>
     <label>
       Выберите пол:
       <br>
-      <input type="radio" name="пол" checked="checked" value="Мужчина">
+      <input type="radio" name="пол" value="Мужчина" required>
       Мужчина
     </label>
     <label>
@@ -138,29 +138,29 @@
       <label>
         Выберите любимый язык программирования из списка:
         <br>
-        <select name="languages" multiple="multiple">
+        <select name="languages" multiple="multiple" required>
           <option value="Pascal">Pascal</option>
-          <option value="C" selected="selected">C</option>
-          <option value="C++" selected="selected">C++</option>
-          <option value="JavaScript" selected="selected">JavaScript</option>
-          <option value="PHP" selected="selected">PHP</option>
-          <option value="Python" selected="selected">Python</option>
-          <option value="Java" selected="selected">Java</option>
-          <option value="Haskel" selected="selected">Haskel</option>
-          <option value="Clojure" selected="selected">Clojure</option>
-          <option value="Prolog" selected="selected">Prolog</option>
-          <option value="Scala" selected="selected">Scala</option>
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="PHP">PHP</option>
+          <option value="Python">Python</option>
+          <option value="Java">Java</option>
+          <option value="Haskel">Haskel</option>
+          <option value="Clojure">Clojure</option>
+          <option value="Prolog">Prolog</option>
+          <option value="Scala">Scala</option>
         </select>
       </label>
       <br>
       <label>
         Биография:
         <br>
-        <textarea name="BIO"></textarea>
+        <textarea required name="BIO"></textarea>
       </label>
       <label>
         <br>
-        <input type="checkbox" checked="checked" name="согласие">
+        <input type="checkbox" name="согласие" required>
         C контрактом ознакомлен (а)
       </label>
       <br>
