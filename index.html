@@ -102,7 +102,7 @@
     <label>
       ФИО:
       <br>
-      <input type="text" name="FIO" placeholder="Введите ФИО" required>
+      <input type="text" name="FIO" placeholder="Введите ФИО" pattern="A-Za-zА-Яа-яЁё\s\-]+" required>
     </label>
     <br>
     <label>
@@ -120,7 +120,7 @@
     <label>
       Дата рождения:
       <br>
-      <input type="date" name="brthday" required>
+      <input type="date" name="brthday" max="2008-09-23" required>
     </label>
     <br>
     <label>
